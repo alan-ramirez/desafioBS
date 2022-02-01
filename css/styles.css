@@ -23,9 +23,45 @@ header{
 header h1 {
     text-align: center;
     margin-bottom: 20px;
+/* animacion */
+    animation-name: titulo;
+    animation-iteration-count: inherit;
+    animation-duration: 5s;
+    animation-timing-function: linear;
 }
+@keyframes titulo {
+    10% {
+        transform:scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+
 .logo {
     width: 10%;
+/* animacion */
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+
+}
+@keyframes logo {
+    10% {
+        transform:skewX(-2deg)
+    }
+    50% {
+        transform: skewX(2deg);
+    }
+    60% {
+        transform:skewX(2deg);
+    }
+    100% {
+        transform: skewX(-2deg);
+    }
+
 }
 
 nav{
@@ -40,6 +76,12 @@ nav ul {
 .menu {
     display: flex;
     justify-content: center;
+}
+
+/*animacio  n li*/
+li:hover {
+    background-color: rgb(174, 173, 247);
+    transform: scale(1.1);
 }
 
 nav ul li a{
